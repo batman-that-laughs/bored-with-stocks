@@ -1,0 +1,26 @@
+#logging:
+logging:
+  level:
+    org.springframework.data.couchbase.repository.query: DEBUG
+
+#server
+server:
+  port: 9601
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-exception: false
+
+#spring config:
+spring:
+  application:
+    name: couchbase-data-adaptor
+
+#couchbase config
+couchbaseConfig:
+  url: localhost
+  auth:
+    username: admin
+    password: adminPass
+
+

@@ -1,0 +1,18 @@
+{
+  "name": "reading-google-sheets-file",
+  "version": "1.0.0",
+  "description": "read google sheets file and make usable json out of it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "read-excel"
+  ],
+  "author": "kau",
+  "license": "ISC",
+  "dependencies": {
+    "read-excel-file": "^5.0.0",
+    "xlsx": "^0.16.9"
+  }
+}

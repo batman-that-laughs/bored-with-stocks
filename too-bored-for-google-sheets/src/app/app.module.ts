@@ -9,6 +9,12 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { AddUserComponent } from './add-user/add-user.component';
 
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTabsModule } from '@angular/material/tabs';
+
 @NgModule({
   declarations: [
     AppComponent,
