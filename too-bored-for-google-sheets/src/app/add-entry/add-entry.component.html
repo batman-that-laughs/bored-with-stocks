@@ -1,0 +1,64 @@
+<div class="container-fluid">
+  <form [formGroup]="entryForm" (ngSubmit)="submitEntry()">
+
+    <!-- transaction type row -->
+    <div class="row">
+      <div class="col-sm-12">
+        <label for="transactionType">
+          Transaction Type:
+          <input type="radio" value="purchase" formControlName="transactionType">
+          <span>Purchase</span>
+          <input type="radio" value="sale" formControlName="transactionType">
+          <span>Sale</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- company name, code and account holder name row -->
+    <div class="row">
+      <div class="col-sm-4">
+        <label for="companyName">
+          Company Name:
+          <input type="text" formControlName="companyName">
+        </label>
+      </div>
+      <div class="col-sm-4">
+        <label for="accountName">
+          Company Code:
+          <input type="text" formControlName="companyCode">
+        </label>
+      </div>
+      <div class="col-sm-4">
+        <label for="accountName">
+          Acount Holder Name:
+          <input type="text" formControlName="accountName">
+        </label>
+      </div>
+    </div>
+
+    <!-- bill date, price and quantity row -->
+    <div class="row">
+      <div class="col-sm-4">
+        <label for="billDate">
+          Bill Date:
+          <input type="date" formControlName="billDate">
+        </label>
+      </div>
+      <div class="col-sm-4">
+        <label for="price">
+          Price:
+          <input type="number" formControlName="price">
+        </label>
+      </div>
+      <div class="col-sm-4">
+        <label for="quantity">
+          Quantity:
+          <input type="number" formControlName="quantity">
+        </label>
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="!entryForm.valid">Submit</button>
+
+  </form>
+</div>
