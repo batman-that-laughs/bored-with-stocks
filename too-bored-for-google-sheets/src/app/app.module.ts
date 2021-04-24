@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { AddEntryComponent } from './add-entry/add-entry.component';
 
 import { ReactiveFormsModule } from "@angular/forms";
+import { AddUserComponent } from './add-user/add-user.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddEntryComponent
+    AddEntryComponent,
+    AddUserComponent
   ],
   imports: [
     BrowserModule,
