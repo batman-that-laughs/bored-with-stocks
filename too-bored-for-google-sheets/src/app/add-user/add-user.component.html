@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <form [formGroup]="accountForm" (ngSubmit)="submitAccount()">
+
+    <!-- account info row -->
+    <div class="row">
+      <div class="col-sm-6">
+        <label for="name">Account Holder Name:</label>
+        <input type="text" placeholder="Name of the Account Holder" formControlName="name">
+      </div>
+      <div class="col-sm-6">
+        <label for="identifier">Account Name Identifier:</label>
+        <input type="text" placeholder="Short Name/ Identifier" formControlName="identifier">
+      </div>
+    </div>
+    <button type="submit" [disabled]="!accountForm.valid">Submit</button>
+  </form>
+</div>
